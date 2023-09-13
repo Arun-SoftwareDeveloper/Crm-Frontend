@@ -1,0 +1,145 @@
+.login-form {
+  max-width: 400px;
+  max-height: 500px;
+  position: relative;
+  bottom: 600px;
+  left: 600px;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  
+}
+
+.login-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color:wheat;
+}
+.login-success-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.login-success {
+  color: green;
+  opacity: 0;
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+  transform: translateX(-100%);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.back-btn{
+  margin:20px;
+  font-size: 20px;
+  margin-right: 360px;
+  cursor: pointer;
+}
+.back-btn{
+  background-color: white;
+}
+.signup{
+  padding:7px;
+  margin:20px;
+  background-color: white;
+  color:black
+}
+.forgot{
+  color:dodgerblue;
+  background-color: white;
+}
+.reg{
+  color:dodgerblue;
+  background-color: white;
+}
+.login-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.crmlogin {
+  width: 100%;
+}
+
+/* Additional styles for textboxes */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* User agent styles */
+div {
+  display: block;
+}
+
+body {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body ::-webkit-scrollbar {
+  width: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}

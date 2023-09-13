@@ -1,0 +1,88 @@
+
+.root {
+  background-color: #0b0b0b;
+  padding: 20px;
+}
+ .crm-logo{
+  max-width: 60px;
+  margin-right: 1100px;
+ }
+ .crm-heading{
+  position: relative;
+  right:580px
+ }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-color: #121212;
+  color: #fff;
+  padding: 10px;
+
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 1100px;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+  right:200px
+}
+
+.nav-item {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.user-container {
+  text-align: center;
+}
+.crm-image{
+  background-color: #090909;
+  width:100%;
+}
+
+.user-list {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-options {
+  display: flex;
+  justify-content: center;
+}
+
+.user-option {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-option:hover {
+  background-color: #0056b3;
+}
+*{
+  color: white;
+  background-color:#090909
+}

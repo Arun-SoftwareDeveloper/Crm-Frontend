@@ -1,0 +1,84 @@
+.register-form {
+  max-width: 300px;
+  position: relative;
+  bottom: 200px;
+  left: 820px;
+}
+
+.register-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.login-user {
+  padding: 20px;
+}
+.login-btn {
+  color: dodgerblue;
+}
+.register-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: wheat;
+}
+* {
+  background-color: #0c0a0a;
+}
+/* RegisterForm.css */
+
+.registration-success-container {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  animation: fade-in 0.5s ease;
+}
+
+.user-exists-container {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  animation: fade-in 0.5s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.register-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.user-exists-container {
+  color: white;
+}
+.header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  background-color: #399462;
+  color: #333;
+}
+* {
+  background-color: #0c0a0a;
+}
+
+.crmregister {
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+.register-button:hover {
+  background-color: #0056b3;
+}
