@@ -31,7 +31,7 @@ function ResetPassword() {
       return;
     }
     if (newPassword === confirmPassword) {
-      toast.success("Password Reset Successfully");
+      toast.success("Password Reset Successfully!!!");
       return;
     }
 
