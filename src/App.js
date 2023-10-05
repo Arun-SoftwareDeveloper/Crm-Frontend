@@ -5,7 +5,7 @@ import RegisterForm from "./Components/RegisterForm";
 import LoginForm from "./Components/LoginForm";
 import ForgotPasswordForm from "./Components/ForgotPassword";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import ResetPassword from "./Components/ResetPassword";
 import AddUser from "./Components/AddUser";
 

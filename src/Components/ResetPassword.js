@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Import useParams from react-router-dom
-import crmreset from "../Images/forgotpassword.jpg";
+// import crmreset from "../Images/forgotpassword.jpg";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

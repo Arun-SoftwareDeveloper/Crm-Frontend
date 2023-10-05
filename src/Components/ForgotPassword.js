@@ -6,7 +6,7 @@ import forgotpassword from "../Images/forgotpassword.jpg";
 
 const ForgotPasswordForm = () => {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();

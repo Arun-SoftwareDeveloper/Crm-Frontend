@@ -9,7 +9,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loginSuccess, setLoginSuccess] = useState(false);
+  // const [loginSuccess, setLoginSuccess] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const LoginForm = () => {
           theme: "light",
         });
 
-        setLoginSuccess(true);
+        // setLoginSuccess(true);
         navigate("/");
         // Save the token to local storage or session storage
         // Example: localStorage.setItem('token', token);
