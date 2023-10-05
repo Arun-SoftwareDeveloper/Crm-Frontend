@@ -6,10 +6,6 @@ import { Link } from "react-router-dom";
 // import { Default } from "react-toastify/dist/utils";
 
 function DashBoard() {
-  const confirmation = (e) => {
-    e.preventDefault();
-    confirm("Press Ok if you are a Manager or Admin");
-  };
   return (
     <div className="root">
       <div className="nav-bar">
