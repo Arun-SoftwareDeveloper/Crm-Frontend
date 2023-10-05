@@ -38,7 +38,7 @@ function ResetPassword() {
     try {
       // Use the 'token' parameter in your API call if necessary
       const response = await axios.post(
-        `http://localhost:4000/resetpassword/${token}`,
+        `https://crm-backend-lr4o.onrender.com/${token}`,
         {
           newPassword,
           confirmPassword,

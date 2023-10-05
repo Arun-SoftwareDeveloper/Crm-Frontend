@@ -17,19 +17,22 @@ const RegisterForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-          firstName,
-          lastName,
-          userType,
-        }),
-      });
+      const response = await fetch(
+        "https://crm-backend-lr4o.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+            firstName,
+            lastName,
+            userType,
+          }),
+        }
+      );
 
       if (response.ok) {
         console.log("User registered successfully");

@@ -37,11 +37,14 @@ const AddUser = ({ userRole }) => {
 
     try {
       // Make an API request to create a user (replace with your backend API endpoint)
-      const response = await axios.post("http://localhost:4000/adduser", {
-        username,
-        password,
-        role,
-      });
+      const response = await axios.post(
+        "https://crm-backend-lr4o.onrender.com/adduser",
+        {
+          username,
+          password,
+          role,
+        }
+      );
 
       // Assuming the backend returns a success message
       if (response.status === 200) {
