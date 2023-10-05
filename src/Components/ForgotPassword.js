@@ -6,7 +6,7 @@ import forgotpassword from "../Images/forgotpassword.jpg";
 
 const ForgotPasswordForm = () => {
   const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(""); // Define message state
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,11 +34,14 @@ const ForgotPasswordForm = () => {
 
       const data = await response.json();
 
+      // Update the message state with the response message
       setMessage(data.message);
       setEmail("");
       toast.success("Reset Link sent Successfully");
     } catch (error) {
       console.error(error);
+      // Update the message state with an error message
+      setMessage("An error occurred while processing your request");
       toast.error("An error occurred while processing your request", {
         position: toast.POSITION.TOP_CENTER,
       });
@@ -64,6 +67,8 @@ const ForgotPasswordForm = () => {
         />
         <button type="submit">Reset Password</button>
       </form>
+      {/* Display the message */}
+      {message && <p className="message">{message}</p>}
       <ToastContainer position="top-right" />
     </div>
   );

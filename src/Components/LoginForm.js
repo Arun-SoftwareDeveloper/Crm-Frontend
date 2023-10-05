@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Style/LoginForm.css";
 import crmlogin from "../Images/crmlogin.jpg";
@@ -9,7 +9,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [loginSuccess, setLoginSuccess] = useState(false);
+  const [loginSuccess, setLoginSuccess] = useState(false); // Uncommented loginSuccess
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const LoginForm = () => {
           theme: "light",
         });
 
-        // setLoginSuccess(true);
+        setLoginSuccess(true); // Set loginSuccess to true when login is successful
         navigate("/");
         // Save the token to local storage or session storage
         // Example: localStorage.setItem('token', token);
@@ -55,18 +55,6 @@ const LoginForm = () => {
       // Handle error here
     }
   };
-
-  useEffect(() => {
-    // Reset login success after a delay
-    const timer = setTimeout(() => {
-      setLoginSuccess(false); // Start animation by hiding the message
-      setTimeout(() => {
-        setLoginSuccess(true); // Show the message after the animation delay
-      }, 500);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
@@ -98,6 +86,7 @@ const LoginForm = () => {
         <button className="login-button" type="submit">
           Login
         </button>
+        {loginSuccess && <p className="login-success">Login successful!</p>}
         <p className="signup">
           Don't have an account?{" "}
           <Link to="/register">
