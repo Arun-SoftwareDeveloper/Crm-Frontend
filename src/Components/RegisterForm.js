@@ -71,7 +71,6 @@ const RegisterForm = () => {
             progress: undefined,
             theme: "light",
           })}
-          ;
         </div>
       )}
       {userExists && (
@@ -86,7 +85,6 @@ const RegisterForm = () => {
             progress: undefined,
             theme: "light",
           })}
-          ;
         </div>
       )}
       <img src={crmregister} className="crmregister" alt="CRM Register" />
